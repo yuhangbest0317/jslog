@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>js</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <img src="/images/banner1.jpg"  class="banner">
+    <h1 class="log-title">控制台收集信息</h1>
+    <a href='/' class="link">返回首页</a>
+    <a href='/aboutError' class="link">查看错误日志</a>
+    
+       <table>
+      
+      <thead>
+        <tr>
+          <th>等级</th>
+          <th>信息</th>
+          <th>文件url</th>
+          <th>产品</th>
+          <th>用户</th>
+          <th>浏览器</th>
+          <th>时间</th>
+        </tr>
+      </thead>
+      <tbody>
+          <% if(logs.length > 0) { %>
+              <% for(var i = 0; i < logs.length; i++ ){ %>
+              <tr>
+                  <td><%= logs[i].level %></td>
+                  <td><%= logs[i].message %></td>
+                  <td><%= logs[i].url %></td>
+                  <td><%= logs[i].project %></td>
+                  <td><%= logs[i].user %></td>
+                  <td><%= logs[i].userAgent %></td>
+                  <td><%= logs[i].time %></td>
+            </tr>
+             <%}%>
+         
+        <%}%>
+      </tbody>
+    </table>
+        
+       
+
+  </body>
+</html>

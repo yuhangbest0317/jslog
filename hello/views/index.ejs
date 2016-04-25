@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Log</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body >
+    <script>
+        var _log = [];
+        (function(){
+            _log.push(['project','zhihuiya']);
+            _log.push(['user',function(){return 'wangyuhang@patsnap.com';}]);
+            _log.push(['page',function(){ }]);
+            var e = document.createElement('script'); e.type = 'text/javascript'; e.async = false; 
+            e.src = 'http://127.0.0.1:8808/javascripts/log.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
+
+        })();
+    </script>
+    <div class="content">
+        
+    </div>
+    <div class="title">
+        <h1>JS 日志管理信息系统</h1>
+        <div class="item" style="margin-left:150px;">
+            <a href='/aboutError'>
+                <img src='/images/err.jpg'>
+                <div class="font">查看错误日志信息</div>
+            </a>
+        </div>
+        <div class="item">
+            <a href='/aboutLog'>
+                <img src='/images/log.jpg'>
+                <div class="font">查看控制台收集信息</div>
+            </a>
+        </div>
+        <div class="item last">
+        <button type="button" class="btn" onclick="error_trigger()">错误按钮</button>
+        <button type="button" class="btn" onclick="log_trigger()">日志按钮</button>
+        </div>
+        <p class="tips">本系统使用node + express + mongoose构建</p>
+        </div>
+    <script>
+        function  error_trigger(){
+            $(a).text();
+            $(d).d();
+        }
+        function  log_trigger(){
+            console.log('console log');
+            console.warn('console warn');
+            console.error('console error');
+            console.debug('console debug');
+            console.info('console info');
+        }
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,100 @@
+body {
+  padding: 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgba(235, 235, 243, 0.16);
+}
+
+a {
+  color: #00B7FF;
+}
+table td{
+    font-size: 12px;
+    min-width: 60px;
+    border: 1px solid grey;
+}
+thead{
+    background-color: gainsboro;
+    font-size: 14px;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+th{
+    height: 35px;
+    border: 1px solid grey;
+    min-width: 100px;
+}
+.content {
+    background: url('/images/back2.jpg');
+    width: 1024px;
+    height: 640px;
+    opacity: 0.5;
+    position: absolute;
+    box-shadow: 15px 13px 7px #888888;
+    left: 180px;
+    z-index: -10;
+}
+body .title {
+    margin: 0 auto;
+    width: 1024px;
+}
+.title > h1{
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 180px;
+    margin-left: 150px;
+}
+.tips{
+    margin-left: 500px;
+    font-size: 20px;
+}
+.item {
+    display: inline-block;
+    margin-right: 20px;
+    border: 3px solid rgba(11, 177, 11, 0.45);
+    border-radius: 9px;
+    box-shadow: 10px 10px 10px #A59E9E;
+}
+.item img{
+    width: 200px;
+    height: 200px;
+}
+.font{
+    display: block;
+}
+.item .font{
+    text-align: center;
+}
+.item.last {
+    width: 200px;
+    height: 220px;
+    position: absolute;
+}
+.btn {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid rgb(251, 251, 253);
+    background-color: #75bb00;
+    color: white;
+    border-radius: 7px;
+    margin: 10px;
+}
+.banner{
+    height: 214px;
+    width: 1400px;
+    position: absolute;
+    z-index: -10;
+}
+.log-title{
+    margin-left: 63px;
+    margin-top: 40px;
+
+}
+.link{
+    display: block;
+    margin-left: 64px;
+    margin-bottom: 20px;
+}
